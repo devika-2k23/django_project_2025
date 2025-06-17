@@ -33,6 +33,9 @@ class UserDetails(models.Model):
 
     def __str__(self):
         return self.user.username
+    
+class login:
+    pass    
 
 # Automatically create an auth token for each new user
 @receiver(post_save, sender=settings.AUTH_USER_MODEL)
